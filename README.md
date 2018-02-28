@@ -17,3 +17,4 @@ e.g.
 ```
 rm ~/.cache/dmenu_run
 ```
+After the file is removed, log out and log back in.
