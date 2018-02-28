@@ -9,3 +9,11 @@ Starting nautilus from the d-menu often opens up a desktop which stays on until 
 ```
 gsettings set org.gnome.desktop.background show-desktop-icons false
 ```
+
+## Refreshing dmenu Applications
+When using i3 in Ubuntu, the dmenu occasionally does not pick up new directories that have been added to the PATH variable. In this case, remove the file dmenu\_run in the directory ~/.cache/
+
+e.g.
+```
+rm ~/.cache/dmenu_run
+```
