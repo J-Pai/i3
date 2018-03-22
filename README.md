@@ -18,3 +18,10 @@ e.g.
 rm ~/.cache/dmenu_run
 ```
 After the file is removed, log out and log back in.
+
+## Changing Default Terminal
+If you would like to change the terminal that is opened by default ($mod + enter) you can set the environment variable $TERMINAL to your desired terminal. The following is an example.
+```
+export TERMINAL=lxterminal
+```
+Adding the previous line to the ~/.profile file will ensure the environment variable is loaded upon login.

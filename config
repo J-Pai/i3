@@ -158,3 +158,4 @@ bar {
 exec vmware-user
 exec --no-startup-id xsetroot -solid "#000000"
 
+
