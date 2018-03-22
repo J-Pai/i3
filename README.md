@@ -26,4 +26,4 @@ export TERMINAL=lxterminal
 ```
 Adding the previous line to the ~/.profile file will ensure the environment variable is loaded upon login.
 
-See the man pages for i3-sensible-terminal for more information.
+See the man page for i3-sensible-terminal for more information.
