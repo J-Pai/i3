@@ -25,3 +25,5 @@ If you would like to change the terminal that is opened by default ($mod + enter
 export TERMINAL=lxterminal
 ```
 Adding the previous line to the ~/.profile file will ensure the environment variable is loaded upon login.
+
+See the man pages for i3-sensible-terminal for more information.
