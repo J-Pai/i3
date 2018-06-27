@@ -27,3 +27,11 @@ export TERMINAL="sakura"
 Adding the previous line to the ~/.profile file will ensure the environment variable is loaded upon login.
 
 See the man page for i3-sensible-terminal for more information.
+
+## Compton and i3
+To get i3 performing faster in VirtualBox (maybe VMWare Workstation), you may want to install compton. This i3 config file also uses a program called `hsetroot` to set the background to black. Make sure to install that prior to using i3.
+```
+sudo apt-get install hsetroot
+sudo apt-get install compton
+```
+
