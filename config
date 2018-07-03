@@ -160,4 +160,4 @@ bar {
 exec vmware-user
 exec --no-startup-id hsetroot -solid "#000000"
 
-exec compton --config ~/.config/i3/compton.conf
+# exec compton --config ~/.config/i3/compton.conf
