@@ -157,6 +157,9 @@ bar {
         status_command i3status
 }
 
+exec_always --no-startup-id xmodmap -e "clear lock"
+exec_always --no-startup-id xmodmap -e "keycode 66 = Escape NoSymbol Escape"
+
 exec vmware-user
 exec --no-startup-id hsetroot -solid "#000000"
 exec --no-startup-id compton --config ~/.config/i3/compton.conf
