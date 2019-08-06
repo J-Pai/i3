@@ -162,5 +162,3 @@ bar {
 
 exec_always --no-startup-id xmodmap -e "clear lock"
 exec_always --no-startup-id xmodmap -e "keycode 66 = Escape NoSymbol Escape"
-
-exec --no-startup-id hsetroot -solid "#000000"
