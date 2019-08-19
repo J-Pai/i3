@@ -2,6 +2,13 @@
 Only 1 file contained in this repository.
 Meant to replace the default i3 config file located in directory ~/.config/i3/
 
+## Rofi - Alternative to dmenu
+This config file might use rofi as the application switcher instead of dmenu.
+Make sure to install prior to use.
+```
+sudo apt-get install rofi
+```
+
 ## Ubuntu GUI File Browser
 When using i3 with Ubuntu, there may come a time when you need a GUI based browser. Typically the default browser is nautilus.
 
@@ -10,6 +17,7 @@ Starting nautilus from the d-menu often opens up a desktop which stays on until 
 gsettings set org.gnome.desktop.background show-desktop-icons false
 ```
 NOTE: With the use of Gnome3 in Ubuntu 18.04, this option is no longer necessary. Older LTS versions will probably still need this command.
+
 ### Alternative Way
 The previous method breaks Unity DE's desktop.
 
