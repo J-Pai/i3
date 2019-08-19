@@ -41,11 +41,16 @@ bindsym $mod+Shift+q kill
 bindsym $mod+Shift+x exec i3lock --color "#000000"
 
 # start dmenu (a program launcher)
-bindsym $mod+d exec dmenu_run
+# bindsym $mod+d exec dmenu_run
 # There also is the (new) i3-dmenu-desktop which only displays applications
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
 # installed.
 # bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
+
+# start rofi (another program launcher)
+bindsym $mod+g exec "rofi -show window"
+bindsym $mod+d exec "rofi -show run"
+bindsym $mod+b exec "rofi -show Workspace"
 
 # change focus
 bindsym $mod+h focus left
@@ -164,3 +169,5 @@ exec_always --no-startup-id xmodmap -e "keycode 66 = Escape NoSymbol Escape"
 exec_always --no-startup-id volumeicon
 exec_always --no-startup-id blueman-applet
 exec_always --no-startup-id ~/.config/i3/g-layout.sh
+
+
