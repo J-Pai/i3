@@ -170,4 +170,4 @@ exec_always --no-startup-id volumeicon
 exec_always --no-startup-id blueman-applet
 exec_always --no-startup-id ~/.config/i3/g-layout.sh
 
-
+workspace 1 output primary
