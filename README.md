@@ -56,3 +56,6 @@ sudo apt-get install hsetroot
 sudo apt-get install compton
 ```
 
+## Screen Layout
+Use `arandr` to generate a script with the correct display layout.
+Execute/Source the script using `~/.xprofile`.
