@@ -164,9 +164,19 @@ bar {
         status_command i3status
 }
 
+mode "screenshot" {
+        # Screenshot specific window or rectangle
+        bindsym w --release exec scrot -s -e "mv $f ~/"; mode "default"
+        # Screenshot full screen
+        bindsym f exec scrot -e "mv $f ~/"; mode "default"
+
+        bindsym Return mode "default"
+        bindsym Escape mode "default"
+}
+bindsym Print mode "screenshot"
+
 exec_always --no-startup-id xmodmap -e "clear lock"
 exec_always --no-startup-id xmodmap -e "keycode 66 = Escape NoSymbol Escape"
-exec_always --no-startup-id volumeicon
 exec_always --no-startup-id blueman-applet
 
 workspace 1 output primary

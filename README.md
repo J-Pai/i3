@@ -58,4 +58,15 @@ sudo apt-get install compton
 
 ## Screen Layout
 Use `arandr` to generate a script with the correct display layout.
-Execute/Source the script using `~/.xprofile`.
+Execute/Source the script using `~/.xsessionrc`.
+
+## Screenshots
+Use `scrot` for screenshots!
+```
+sudo apt-get install scrot
+scrot -s
+```
+Config is also setup to open a mode `screenshot`.
+
+In mode `screenshot`, use `w` for specific window/rectangle and use `f` for
+fullscreen.
