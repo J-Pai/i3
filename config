@@ -186,3 +186,5 @@ exec_always --no-startup-id xsetroot -solid "#202020"
 exec_always --no-startup-id dex -ae i3
 
 workspace 1 output primary
+
+exec --no-startup-id vmware-user
