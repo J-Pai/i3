@@ -179,6 +179,5 @@ bindsym Print mode "screenshot"
 
 exec_always --no-startup-id xmodmap -e "clear lock"
 exec_always --no-startup-id xmodmap -e "keycode 66 = Escape NoSymbol Escape"
-exec_always --no-startup-id blueman-applet
 
 workspace 1 output primary
