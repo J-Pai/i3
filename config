@@ -179,5 +179,6 @@ bindsym Print mode "screenshot"
 
 exec_always --no-startup-id xmodmap -e "clear lock"
 exec_always --no-startup-id xmodmap -e "keycode 66 = Escape NoSymbol Escape"
+exec_always --no-startup-id xsetroot -solid "#202020"
 
 workspace 1 output primary
