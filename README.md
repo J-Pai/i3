@@ -6,7 +6,7 @@ Meant to replace the default i3 config file located in directory ~/.config/i3/
 This config file might use rofi as the application switcher instead of dmenu.
 Make sure to install prior to use.
 ```
-sudo apt install rofi dex
+sudo apt install rofi
 ```
 
 ## Ubuntu GUI File Browser

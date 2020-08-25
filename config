@@ -183,6 +183,5 @@ exec_always --no-startup-id xmodmap -e "clear lock"
 exec_always --no-startup-id xmodmap -e "keycode 133 = Mode_switch"
 exec_always --no-startup-id xmodmap -e "keycode 66 = Escape NoSymbol Caps_Lock"
 exec_always --no-startup-id xsetroot -solid "#202020"
-exec dex -ae i3
 
 workspace 1 output primary
