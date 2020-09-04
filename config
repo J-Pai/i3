@@ -184,6 +184,7 @@ exec_always --no-startup-id setxkbmap -option caps:escape
 exec_always --no-startup-id setxkbmap -option caps:escape_shifted_capslock
 exec_always --no-startup-id xsetroot -solid "#202020"
 exec_always --no-startup-id dex -ae i3
+exec_always --no-startup-id nm-applet
 
 workspace 1 output primary
 
