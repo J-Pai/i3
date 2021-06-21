@@ -179,6 +179,7 @@ bindsym Print mode "screenshot"
 
 # Use 'setxkbmap -layout us' to reset keyboard layout.
 # keycode/keysym <CODE> = NORMAL SHIFT MODE_SWITCH
+exec_always --no-startup-id setxkbmap -option caps:escape
 exec_always --no-startup-id setxkbmap -option caps:escape_shifted_capslock
 exec_always --no-startup-id xsetroot -solid "#202020"
 exec_always --no-startup-id dex -ae i3
