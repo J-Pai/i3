@@ -50,6 +50,7 @@ bindsym $mod+Shift+x exec i3lock --color "#696969"
 # start rofi (another program launcher)
 bindsym $mod+g exec "rofi -show window"
 bindsym $mod+d exec "rofi -show run"
+bindsym $mod+shift+d exec "rofi -show drun"
 bindsym $mod+b exec "rofi -show Workspace"
 
 # change focus
