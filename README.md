@@ -70,3 +70,40 @@ Config is also setup to open a mode `screenshot`.
 
 In mode `screenshot`, use `w` for specific window/rectangle and use `f` for
 fullscreen.
+
+## Remapping CapsLock to ESC and Page Up to CapsLock
+
+Open `/usr/share/X11/xkb/symbols/capslock` and add the following section:
+
+```
+hidden partial modifier_keys
+xkb_symbols "i3custom" {
+    key <CAPS> { [ Escape ] };
+    key <PGUP>  { [ Caps_Lock ] };
+};
+```
+
+Open `/usr/share/X11/xkb/rules/evdev.xml`. Locate the `caps:* section` and add
+the following section:
+
+```
+      <option>
+        <configItem>
+          <name>caps:i3custom</name>
+          <description>Custom configuration for i3</description>
+        </configItem>
+      </option>
+```
+
+Open `/usr/share/X11/xkb/rules/evdev`. Locate the `caps:* section` and
+add the following line:
+
+```
+  caps:i3custom		=	+capslock(i3custom)
+```
+
+Open `/etc/default/keyboard` and add the following line:
+
+```
+XKBOPTIONS="caps:i3custom"
+```
