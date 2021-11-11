@@ -180,5 +180,6 @@ bindsym Print mode "screenshot"
 
 exec_always --no-startup-id xsetroot -solid "#202020"
 exec_always --no-startup-id dex -ae i3
+exec_always --no-startup-id blueman-applet
 
 workspace 1 output primary
