@@ -107,3 +107,9 @@ Open `/etc/default/keyboard` and add the following line:
 ```
 XKBOPTIONS="caps:i3custom"
 ```
+
+## Volume Control
+
+```
+sudo apt install volumeicon-alsa
+```
