@@ -111,5 +111,5 @@ XKBOPTIONS="caps:i3custom"
 ## Volume Control
 
 ```
-sudo apt install volumeicon-alsa
+git clone https://github.com/hastinbe/i3-volume.git ~/.config/i3-volume
 ```
