@@ -114,6 +114,8 @@ bindsym $mod+7 workspace 7
 bindsym $mod+8 workspace 8
 bindsym $mod+9 workspace 9
 bindsym $mod+0 workspace 10
+bindsym $mod+Tab workspace next_on_output
+bindsym $mod+Shift+Tab workspace prev_on_output
 
 # move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace 1
@@ -183,6 +185,8 @@ exec_always --no-startup-id dex -ae i3
 exec_always --no-startup-id blueman-applet
 
 workspace 1 output primary
+workspace 2 output nonprimary
+workspace 10 output primary
 
 # Review the lines below and append to ~/.config/i3/config
 
@@ -214,3 +218,13 @@ set $volumestep 5
 bindsym XF86AudioRaiseVolume exec --no-startup-id $volumepath/volume -n -t $statuscmd -u $statussig up $volumestep
 bindsym XF86AudioLowerVolume exec --no-startup-id $volumepath/volume -n -t $statuscmd -u $statussig down $volumestep
 bindsym XF86AudioMute        exec --no-startup-id $volumepath/volume -n -t $statuscmd -u $statussig mute
+
+# EMU windows
+workspace 10 output primary
+exec --no-startup-id i3-msg 'workspace 10; exec i3-sensible-terminal'
+assign [title="^.+@.+:.+"] 10
+assign [title="Terminal on edaemu.*"] 10
+workspace 9 output primary
+assign [title="^[^~]+ on edaemu.*"] 9
+
+exec --no-startup-id i3-msg 'workspace 1'
