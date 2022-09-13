@@ -169,9 +169,9 @@ bar {
 
 mode "screenshot" {
         # Screenshot specific window or rectangle
-        bindsym w --release exec scrot -s -e 'mv $f /tmp/ && eog /tmp/$f && rm /tmp/$f'; mode "screenshot"
+        bindsym w --release exec scrot -s -e 'mv $f /tmp/ && eog /tmp/$f && rm /tmp/$f'; mode "screenshot"; mode "default"
         # Screenshot full screen
-        bindsym f exec scrot -e 'mv $f /tmp/ && eog /tmp/$f && rm /tmp/$f'; mode "screenshot"
+        bindsym f exec scrot -e 'mv $f /tmp/ && eog /tmp/$f && rm /tmp/$f'; mode "screenshot"; mode "default"
         # Open image viewer
         bindsym v --release exec eog; mode "default"
 
