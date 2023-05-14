@@ -77,13 +77,13 @@ interval=10
 separator=false
 
 [wifi]
-#instance=wlp3s0
+instance=wlp2s0
 interval=10
-separator=false
+#separator=false
 
-[bandwidth]
+# [bandwidth]
 #instance=eth0
-interval=5
+# interval=5
 
 # CPU usage
 #
