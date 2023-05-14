@@ -29,4 +29,9 @@ workspace 10 output "eDP-1"
 workspace 1 output "HDMI-1" "eDP-1"
 workspace 4 output "HDMI-1" "eDP-1"
 workspace 5 output "HDMI-1" "eDP-1"
+
+assign [title=".*Signal"] 5
+exec --no-startup-id signal-desktop
+assign [class=".*gamescope.*"] 4
+assign [class=".*steam_app_.*"] 4
 ```
