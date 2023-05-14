@@ -1,2 +1,0 @@
-#!/bin/bash
-compton --config ~/.config/i3/compton.conf &
