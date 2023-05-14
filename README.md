@@ -36,3 +36,9 @@ exec --no-startup-id signal-desktop
 assign [class=".*gamescope.*"] 4
 assign [class=".*steam_app_.*"] 4
 ```
+
+## Keychron K2 Configuration
+
+Prefer to use Apple mode since Windows mode FN keys are broken.
+
+https://schnouki.net/post/2019/how-to-use-a-keychron-k2-usb-keyboard-on-linux/
