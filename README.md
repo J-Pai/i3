@@ -5,10 +5,11 @@ Meant to replace the default i3 config file located in directory ~/.config/i3/
 ## Setup
 
 ```shell
-sudo apt install i3 autorandr arandr rofi
+sudo apt install i3 autorandr arandr rofi i3blocks
 sudo mkdir -p /etc/i3/config.d
 sudo touch /etc/i3/config.d/${USER}_display.conf
 sudo chown ${USER}:${USER} /etc/i3/config.d/${USER}_display.conf
+ln -s ~/.config/i3/i3blocks ~/.config
 ```
 
 ## Setting Display Configurations
