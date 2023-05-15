@@ -37,7 +37,21 @@ assign [class=".*gamescope.*"] 4
 assign [class=".*steam_app_.*"] 4
 ```
 
-## Keychron K2 Configuration
+## HIDs
+
+### Mouse Settings
+
+```shell
+Section "InputClass"
+    Identifier "Logitech G602"
+    Driver "libinput"
+    MatchIsPointer "yes"
+    Option "AccelProfile" "flat"
+    Option "AccelSpeed" "-0.1"
+EndSection
+```
+
+### Keychron K2 Configuration
 
 Prefer to use Apple mode since Windows mode FN keys are broken.
 
