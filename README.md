@@ -33,8 +33,11 @@ workspace 5 output "HDMI-1" "eDP-1"
 
 assign [title=".*Signal"] 5
 exec --no-startup-id signal-desktop
-assign [class=".*gamescope.*"] 4
-assign [class=".*steam_app_.*"] 4
+for_window [class=".*steam_app_.*"] move to workspace 4
+
+exec --no-startup-id /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1 &
+
+exec --no-startup-id blueman-applet
 ```
 
 ## HIDs
