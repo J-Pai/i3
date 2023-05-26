@@ -41,6 +41,8 @@ assign [class=".*steam_app_.*"] 4
 
 ### Mouse Settings
 
+Update `/etc/X11/xorg.conf.d/99-libinput-custom-config.conf`.
+
 ```shell
 Section "InputClass"
     Identifier "Logitech G602"

@@ -46,8 +46,8 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 # use these keys for focus, movement, and resize directions when reaching for
 # the arrows is not convenient
 set $left h
-set $up j
-set $down k
+set $up k
+set $down j
 set $right l
 
 set $mod Mod1
@@ -225,5 +225,7 @@ bindsym Mod4+s mode "screenshot"
 bar {
         status_command i3blocks
 }
+
+focus_wrapping no
 
 include /etc/i3/config.d/*
