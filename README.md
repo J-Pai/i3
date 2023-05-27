@@ -56,6 +56,18 @@ Section "InputClass"
 EndSection
 ```
 
+To fix dmesg mouse spam:
+
+```shell
+[17532.188012] logitech-djreceiver 0003:046D:C537.0012: Unexpected input report number 128
+```
+
+Add the following to `/etc/modprobe.d/blacklist.conf`:
+
+```shell
+blacklist hid_logitech_dj
+```
+
 ### Keychron K2 Configuration
 
 Prefer to use Apple mode since Windows mode FN keys are broken.
