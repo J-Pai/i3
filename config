@@ -173,9 +173,9 @@ bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
 
-set $locker i3lock -f --color "#696969"
+set $locker_args -f --color "#696969"
 
-bindsym $mod+Shift+x exec --no-startup-id $locker & sleep 30 && xset dpms force off
+bindsym $mod+Shift+x exec --no-startup-id ~/.config/i3/scripts/lock_and_screen_off.sh $locker_args
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
