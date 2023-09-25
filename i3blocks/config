@@ -24,7 +24,7 @@
 #
 # The top properties below are applied to every block, but can be overridden.
 # Each block command defaults to the script name to avoid boilerplate.
-command=/usr/share/i3blocks/$BLOCK_NAME
+command=/usr/share/i3blocks/$BLOCK_NAME/$BLOCK_NAME
 separator_block_width=15
 markup=none
 
@@ -33,18 +33,18 @@ markup=none
 # The first parameter sets the step (and units to display)
 # The second parameter overrides the mixer selection
 # See the script for details.
-# [volume]
-# command=/usr/share/i3blocks/volume "1%"
-# label=VOL
-# #label=♪
-# instance=Master
-# #instance=PCM
-# interval=once
-# signal=10
-[volume-pulseaudio]
-command=~/.config/i3blocks/volume-pulseaudio.sh
+[volume]
+command=/usr/share/i3blocks/volume/volume "1%"
+label=VOL
+#label=♪
+instance=Master
+#instance=PCM
 interval=once
 signal=10
+# [volume-pulseaudio]
+# command=~/.config/i3blocks/volume-pulseaudio.sh
+# interval=once
+# signal=10
 
 # Memory usage
 #
