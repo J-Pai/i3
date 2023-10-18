@@ -206,9 +206,9 @@ bindsym $mod+r mode "resize"
 
 mode "screenshot" {
         # Screenshot specific window or rectangle
-        bindsym w --release exec scrot -s -e 'mv $f /tmp/ && eog /tmp/$f && rm /tmp/$f'; mode "screenshot"; mode "default"
+        bindsym w --release exec scrot -s -e 'xclip -selection clipboard -t image/png -i $f'; mode "screenshot"; mode "default"
         # Screenshot full screen
-        bindsym f exec scrot -e 'mv $f /tmp/ && eog /tmp/$f && rm /tmp/$f'; mode "screenshot"; mode "default"
+        bindsym f exec scrot -e 'xclip -selection clipboard -t image/png -i $f'; mode "screenshot"; mode "default"
 
         # Open image viewer
         bindsym v --release exec eog; mode "default"
