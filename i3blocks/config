@@ -47,9 +47,8 @@ markup=none
 # signal=10
 [volume-pipewire]
 command=~/.config/i3blocks/volume-pipewire.sh
-interval=persist
+interval=once
 signal=10
-SUBSCRIBE=1
 
 # Memory usage
 #
