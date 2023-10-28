@@ -33,18 +33,22 @@ markup=none
 # The first parameter sets the step (and units to display)
 # The second parameter overrides the mixer selection
 # See the script for details.
-[volume]
-command=/usr/share/i3blocks/volume/volume "1%"
-label=VOL
-#label=♪
-instance=Master
-#instance=PCM
-interval=once
-signal=10
+# [volume]
+# command=/usr/share/i3blocks/volume/volume "1%"
+# label=VOL
+# #label=♪
+# instance=Master
+# #instance=PCM
+# interval=once
+# signal=10
 # [volume-pulseaudio]
 # command=~/.config/i3blocks/volume-pulseaudio.sh
 # interval=once
 # signal=10
+[volume-pipewire]
+command=~/.config/i3blocks/volume-pipewire.sh
+interval=once
+signal=10
 
 # Memory usage
 #
